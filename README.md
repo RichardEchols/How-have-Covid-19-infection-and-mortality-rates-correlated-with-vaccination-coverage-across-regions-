@@ -76,39 +76,39 @@ The conclusions drawn from this analysis are as follows:
 
 The journey through the data began with a careful selection of relevant datasets from the 'CovidDeaths' and 'CovidVaccinations' tables, ensuring that only records with non-null continent fields were considered to maintain the integrity of the analysis.
 
-Data Extraction:
+**Data Extraction:**
 
 Initial queries fetched core data, including location, dates, total cases, new cases, and total deaths, all sorted to facilitate chronological analysis.
 
-Calculating Key Metrics:
+**Calculating Key Metrics:**
 
 Computation of critical indicators such as death percentages and population infection percentages allowed for a deeper understanding of the virus's lethality and reach.
 
 
-Comparative Analysis:
+**Comparative Analysis:**
 
 By focusing on 'states' within the dataset, I was able to draw direct comparisons between different areas, particularly looking at case and death counts in relation to population figures.
 
 
-Aggregation and Grouping:
+**Aggregation and Grouping:**
 
 Aggregated data provided the highest infection counts and death counts, which were then used to rank countries and continents, revealing the areas most impacted by the pandemic.
 
 
-Temporal Analysis:
+**Temporal Analysis:**
 
 Global numbers were summarized over time to track the pandemic’s progress and the corresponding death percentages, offering a dynamic view of the situation as it unfolded.
 
 
-Vaccination Rollout:
+**Vaccination Rollout:**
 
 Joining the CovidDeaths and CovidVaccinations datasets enabled an analysis of the vaccination efforts against the backdrop of existing population data.
 
 
-Advanced SQL Techniques:
+**Advanced SQL Techniques:**
 
 Utilizing Common Table Expressions (CTEs) and temporary tables, I managed to perform more complex, cumulative calculations, such as rolling counts of vaccinated individuals.
 
-Data Persistence:
+**Data Persistence:**
 
 For future reference and visualizations, a view named 'PercentPopulationVaccinated' was created, which stored the calculated vaccination percentages over time.
